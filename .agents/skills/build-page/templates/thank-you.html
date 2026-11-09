@@ -1,0 +1,65 @@
+<!-- =====================================================================
+     THANK-YOU / ORDER CONFIRMATION SNIPPET TEMPLATE (6FA x BM)
+     GHL paste version: no <html>, <head> or <body>.
+     Sahil's 3 steps: 1) access your product, 2) join the community,
+     3) book your call (optional bonus). Delete any step the user does not have.
+     Do NOT put a Meta pixel here. The Purchase event goes in GHL's tracking
+     code settings for this funnel step (see SKILL.md).
+     ===================================================================== -->
+<!-- MOA:SNIPPET START -->
+<style>
+/* Paste the full contents of templates/styles.css here, with brand tokens set. */
+</style>
+
+<div class="moa-page">
+
+  <section class="moa-hero">
+    <div class="moa-read">
+      <!-- REPLACE: upload assets/brand/[logo file] to GHL Media and paste the URL. Delete if no logo. -->
+      <img class="moa-logo" src="[LOGO_URL]" alt="[Brand name] logo">
+      <div class="moa-progress" aria-hidden="true"><i></i></div>
+      <span class="moa-alert">[Wait. Read this page before you close it.]</span>
+      <h1 style="margin-top:16px">[You're in! Your PRODUCT is on its way.]</h1>
+      <p class="moa-sub">[Check your inbox for an email from EMAIL SENDER in the next few minutes. Here is what to do next.]</p>
+    </div>
+  </section>
+
+  <section class="moa-section soft">
+    <div class="moa-wrap">
+      <div class="moa-grid cols-3">
+        <div class="moa-card">
+          <div class="moa-num">1</div>
+          <h3>[Access your product]</h3>
+          <p>[Where it is and how to open it]</p>
+          <div class="moa-cta-block"><a class="moa-btn" href="{{ACCESS_LINK}}">[Open PRODUCT now]</a></div>
+        </div>
+        <div class="moa-card">
+          <div class="moa-num">2</div>
+          <h3>[Join the community]</h3>
+          <p>[Why it helps them get the result faster]</p>
+          <div class="moa-cta-block"><a class="moa-btn" href="{{NEXT_STEP_LINK}}">[Join free]</a></div>
+        </div>
+        <div class="moa-card">
+          <div class="moa-num">3</div>
+          <h3>[Bonus: book your free 15-minute audit call]</h3>
+          <p>[Only if you book in the next 30 days. What they get on the call.]</p>
+          <div class="moa-cta-block"><a class="moa-btn" href="{{BOOKING_LINK}}">[Book my call]</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="moa-section">
+    <div class="moa-read moa-center moa-stack">
+      <h2>[Your first quick win]</h2>
+      <p>[One thing to do in the next 15 minutes with the product.]</p>
+      <p class="moa-small">[Did not get the email? Check spam or promotions, or reply to SUPPORT EMAIL.]</p>
+    </div>
+  </section>
+
+  <footer class="moa-footer">
+    <p>&copy; [YEAR] [Business name]. All rights reserved.</p>
+    <p><a href="[PRIVACY_URL]">Privacy</a><a href="[TERMS_URL]">Terms</a></p>
+  </footer>
+</div>
+<!-- MOA:SNIPPET END -->

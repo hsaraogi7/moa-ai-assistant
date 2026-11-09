@@ -1,0 +1,204 @@
+<!-- =====================================================================
+     SALES PAGE SNIPPET TEMPLATE (6FA x BM)
+     This is the GHL paste version: no <html>, <head> or <body>.
+     Build rules:
+       - Replace every [BRACKET] with approved copy from copy.md.
+       - Delete any section the page does not need (see SKILL.md checklist).
+       - Never invent proof. If there are no testimonials, delete the proof
+         section entirely. Do not leave fake quotes.
+       - Every buy button uses {{CHECKOUT_URL}} until the user gives the real link.
+       - Images: in <page>-preview.html use the local relative path. In <page>-ghl-paste.html
+         use the GHL Media URL, or keep the REPLACE comment above the image.
+     ===================================================================== -->
+<!-- MOA:SNIPPET START -->
+<style>
+/* Paste the full contents of templates/styles.css here, with brand tokens set. */
+</style>
+
+<div class="moa-page" id="moa-top">
+
+  <!-- 1. HERO: who it is for, outcome headline, sub, mockup, priced button -->
+  <section class="moa-hero">
+    <div class="moa-wrap moa-hero-grid">
+      <div>
+        <!-- REPLACE: upload assets/brand/[logo file] to GHL Media and paste the URL. Delete this img if there is no logo. -->
+        <img class="moa-logo" src="[LOGO_URL]" alt="[Brand name] logo">
+        <span class="moa-eyebrow">[For WHO: e.g. For coaches stuck under $5K a month]</span>
+        <h1>[Headline: Discover how to RESULT using METHOD in TIMEFRAME]</h1>
+        <p class="moa-sub">[Subheadline: adds specificity, kills the main objection, or stacks the outcome]</p>
+        <div class="moa-cta-block">
+          <a class="moa-btn moa-main-cta" href="{{CHECKOUT_URL}}">[Yes, I want PRODUCT for $PRICE]<span>[Instant access. Use it today.]</span></a>
+          <div class="moa-trust"><span>[Instant digital access]</span><span>[GUARANTEE short line]</span></div>
+        </div>
+      </div>
+      <div>
+        <!-- REPLACE: upload content/mockups/[cover file] to GHL Media and paste the URL -->
+        <img class="moa-mockup" src="[MOCKUP_URL]" alt="[Product name] mockup">
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. THIS IS FOR YOU IF: situations, not demographics (3 to 5) -->
+  <section class="moa-section soft">
+    <div class="moa-read">
+      <h2>[This is for you if...]</h2>
+      <ul class="moa-checks">
+        <li>[Situation 1 in their words]</li>
+        <li>[Situation 2]</li>
+        <li>[Situation 3]</li>
+      </ul>
+      <p style="margin-top:20px">[One or two lines: it is not you, it is the missing system. Bridge to the product.]</p>
+    </div>
+  </section>
+
+  <!-- 3. WHAT YOU GET: deliverable so you can outcome without pain (5 to 7) -->
+  <section class="moa-section">
+    <div class="moa-wrap">
+      <div class="moa-center moa-read">
+        <span class="moa-eyebrow">[Inside PRODUCT NAME]</span>
+        <h2 style="margin-top:12px">[Here is everything you get]</h2>
+      </div>
+      <div class="moa-grid cols-3">
+        <div class="moa-card"><h3>[Deliverable 1]</h3><p>[so you can OUTCOME without PAIN]</p></div>
+        <div class="moa-card"><h3>[Deliverable 2]</h3><p>[so you can OUTCOME without PAIN]</p></div>
+        <div class="moa-card"><h3>[Deliverable 3]</h3><p>[so you can OUTCOME without PAIN]</p></div>
+      </div>
+      <!-- Optional: real screenshots from inside the product raise value more than AI images -->
+      <!-- REPLACE: upload assets/product/[screenshot file] to GHL Media and paste the URL -->
+      <img class="moa-shot" src="[INSIDE_SCREENSHOT_URL]" alt="Inside [Product name]" style="margin:28px auto 0">
+    </div>
+  </section>
+
+  <!-- 4. HOW IT WORKS: 3 steps, step 1 under 5 minutes, quick win in 15 -->
+  <section class="moa-section soft">
+    <div class="moa-wrap">
+      <h2 class="moa-center">[How it works]</h2>
+      <div class="moa-grid cols-3">
+        <div class="moa-card"><div class="moa-num">1</div><h3>[Step 1: under 5 minutes]</h3><p>[What they do]</p></div>
+        <div class="moa-card"><div class="moa-num">2</div><h3>[Step 2]</h3><p>[What they do]</p></div>
+        <div class="moa-card"><div class="moa-num">3</div><h3>[Step 3: the quick win]</h3><p>[The result they see]</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PROOF: real testimonials only. Delete this whole section if none. -->
+  <section class="moa-section">
+    <div class="moa-wrap">
+      <h2 class="moa-center">[What people are saying]</h2>
+      <div class="moa-grid cols-2">
+        <div class="moa-quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"[Exact quote, specific result]"</p>
+          <!-- REPLACE: upload assets/photos/[person photo] to GHL Media and paste the URL, or delete the img -->
+          <div class="who"><img src="[PERSON_PHOTO_URL]" alt="[Name]"><div><b>[Name]</b><br><span class="moa-small">[Role or location]</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. OFFER + VALUE STACK + PRICE ANCHOR -->
+  <section class="moa-section dark" id="moa-offer">
+    <div class="moa-wrap moa-center">
+      <span class="moa-eyebrow">[Today only / Launch price, only if true]</span>
+      <h2 style="margin-top:12px">[Get PRODUCT NAME today]</h2>
+      <div class="moa-offer">
+        <div class="moa-offer-img">
+          <!-- REPLACE: same mockup URL as the hero -->
+          <img src="[MOCKUP_URL]" alt="[Product name]">
+        </div>
+        <div class="moa-offer-body" style="text-align:left">
+          <div class="moa-stack-row"><b>[Item 1]</b><span class="val">[$VALUE]</span></div>
+          <div class="moa-stack-row"><b>[Item 2]</b><span class="val">[$VALUE]</span></div>
+          <div class="moa-stack-row"><b>[Bonus: item]</b><span class="val">[$VALUE]</span></div>
+          <div class="moa-total"><span>Total value</span><s>[$TOTAL]</s></div>
+          <div class="moa-price">
+            <span class="was">[Normally $ANCHOR]</span>
+            <span class="now">[$PRICE]</span>
+            <span class="moa-small">[One-time payment. Instant access.]</span>
+          </div>
+          <div class="moa-cta-block">
+            <a class="moa-btn" href="{{CHECKOUT_URL}}">[Yes, I want PRODUCT for $PRICE]<span>[Get instant access]</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. WHY ME: short, specific, earned -->
+  <section class="moa-section soft">
+    <div class="moa-wrap moa-read moa-about">
+      <!-- REPLACE: upload assets/photos/[headshot] to GHL Media and paste the URL -->
+      <img src="[HEADSHOT_URL]" alt="[Coach name]">
+      <div class="moa-stack">
+        <h2>[Hi, I am NAME]</h2>
+        <p>[2 to 4 lines: who you help, the result you got, why this product exists]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. GUARANTEE: only if the user confirmed one -->
+  <section class="moa-section">
+    <div class="moa-read">
+      <div class="moa-guarantee">
+        <div class="moa-badge">[30 DAY]<br>GUARANTEE</div>
+        <div class="moa-stack"><h3>[Guarantee name]</h3><p>[If you do not RESULT in TIMEFRAME, email us and we refund you. No hoops.]</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FAQ: 4 to 6 real objections. Skip for a lean MVP page. -->
+  <section class="moa-section soft">
+    <div class="moa-read moa-faq">
+      <h2 class="moa-center" style="margin-bottom:12px">[Questions]</h2>
+      <details><summary>[How do I get access?]</summary><p>[Answer]</p></details>
+      <details><summary>[Is this right for me if...?]</summary><p>[Answer]</p></details>
+      <details><summary>[How long does it take?]</summary><p>[Answer]</p></details>
+      <details><summary>[What if it does not work for me?]</summary><p>[Answer]</p></details>
+    </div>
+  </section>
+
+  <!-- 10. FINAL CTA + P.S. -->
+  <section class="moa-section dark">
+    <div class="moa-read moa-center moa-stack">
+      <h2>[Restate the outcome in one line]</h2>
+      <p class="moa-sub">[The choice: keep doing X, or spend $PRICE and get Y today]</p>
+      <div class="moa-cta-block">
+        <a class="moa-btn" href="{{CHECKOUT_URL}}">[Yes, I want PRODUCT for $PRICE]<span>[Instant access]</span></a>
+      </div>
+      <p class="moa-small" style="margin-top:20px"><b>P.S.</b> [Recap the outcome, the price and the guarantee in two lines.]</p>
+    </div>
+  </section>
+
+  <footer class="moa-footer">
+    <p>&copy; [YEAR] [Business name]. All rights reserved.</p>
+    <p><a href="[PRIVACY_URL]">Privacy</a><a href="[TERMS_URL]">Terms</a></p>
+    <p>[Results disclaimer: results vary and depend on effort. This is not a guarantee of income.]</p>
+  </footer>
+
+  <!-- STICKY BUY BAR -->
+  <div class="moa-sticky" aria-hidden="true">
+    <div class="moa-sticky-txt"><b>[Product name]</b>[$PRICE today]</div>
+    <a class="moa-btn" href="{{CHECKOUT_URL}}" tabindex="-1">[Get it now]</a>
+  </div>
+</div>
+
+<script>
+/* Shows the sticky buy bar once the hero button scrolls out of view. Safe to remove. */
+(function () {
+  var pages = document.querySelectorAll('.moa-page');
+  pages.forEach(function (page) {
+    var bar = page.querySelector('.moa-sticky');
+    var hero = page.querySelector('.moa-main-cta');
+    if (!bar || !hero || !('IntersectionObserver' in window)) return;
+    page.style.paddingBottom = '76px';
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var past = !e.isIntersecting && e.boundingClientRect.top < 0;
+        bar.classList.toggle('is-on', past);
+        bar.setAttribute('aria-hidden', past ? 'false' : 'true');
+      });
+    }).observe(hero);
+  });
+})();
+</script>
+<!-- MOA:SNIPPET END -->

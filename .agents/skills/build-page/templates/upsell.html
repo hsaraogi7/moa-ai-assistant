@@ -1,0 +1,65 @@
+<!-- =====================================================================
+     UPSELL (ONE-CLICK OFFER) SNIPPET TEMPLATE (6FA x BM)
+     GHL paste version: no <html>, <head> or <body>.
+     IMPORTANT: a normal link inside custom HTML cannot charge the saved card.
+     The real YES button must be GHL's own one-click upsell button element,
+     placed in GHL right where the comment "GHL YES BUTTON GOES HERE" sits.
+     Simplest setup: split this file into two Custom HTML elements:
+       Part A = everything above the marker, Part B = everything below it,
+       and drop GHL's native upsell button + "No thanks" link between them.
+     The {{UPSELL_YES_URL}} link below is a stand-in for the preview only.
+     ===================================================================== -->
+<!-- MOA:SNIPPET START -->
+<style>
+/* Paste the full contents of templates/styles.css here, with brand tokens set. */
+</style>
+
+<div class="moa-page">
+
+  <section class="moa-hero">
+    <div class="moa-read">
+      <div class="moa-progress" aria-hidden="true"><i></i></div>
+      <span class="moa-alert">[Your order is not complete yet. One quick step.]</span>
+      <h1 style="margin-top:16px">[Wait! Add UPSELL NAME and get BIGGER RESULT, faster]</h1>
+      <p class="moa-sub">[Why this is the natural next step after what they just bought: more of the thing, or more help with the thing.]</p>
+      <!-- REPLACE: upload content/mockups/[upsell mockup] to GHL Media and paste the URL -->
+      <img class="moa-mockup" src="[UPSELL_MOCKUP_URL]" alt="[Upsell name]">
+    </div>
+  </section>
+
+  <section class="moa-section soft">
+    <div class="moa-read">
+      <h2>[Here is what you get]</h2>
+      <ul class="moa-checks">
+        <li>[Deliverable so you can OUTCOME without PAIN]</li>
+        <li>[Deliverable]</li>
+        <li>[Deliverable]</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="moa-section">
+    <div class="moa-wrap moa-center">
+      <div class="moa-offer">
+        <div class="moa-offer-body">
+          <div class="moa-price">
+            <span class="was">[Normally $ANCHOR]</span>
+            <span class="now">[$UPSELL_PRICE]</span>
+            <span class="moa-small">[One click. No need to enter your card again.]</span>
+          </div>
+          <!-- ===== GHL YES BUTTON GOES HERE (native one-click upsell button) ===== -->
+          <div class="moa-cta-block">
+            <a class="moa-btn" href="{{UPSELL_YES_URL}}">[Yes, add UPSELL NAME for $UPSELL_PRICE]<span>[Added to your order instantly]</span></a>
+            <a class="moa-link-no" href="{{UPSELL_NO_URL}}">[No thanks, I will figure it out on my own]</a>
+          </div>
+          <!-- ===== END GHL BUTTON AREA ===== -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="moa-footer">
+    <p>&copy; [YEAR] [Business name]. All rights reserved.</p>
+  </footer>
+</div>
+<!-- MOA:SNIPPET END -->
