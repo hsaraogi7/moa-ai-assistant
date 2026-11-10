@@ -60,10 +60,9 @@ Set up my AI assistant in this folder. Do every step yourself. Never ask me to d
 4. Then start my setup interview right away by following .agents/skills/my-business/SKILL.md exactly. One question at a time.
 ```
 
-**If it says it can't connect to GitHub:** your app is blocking internet for the assistant. Fix it once:
-- Open **Settings** (Mac: ChatGPT menu > Settings, or Cmd + comma) and go to the agent **Configuration** section.
-- Under **Sandbox settings**, turn on **Allow network access**.
-- Can't find it? In the same Settings, under **Permissions**, turn on **Show Full access in composer**. A permissions menu then appears under the chat box: pick **Full access**, and switch it back after setup.
+**If it says it can't connect to GitHub:** the app is blocking internet for the assistant. Fix it once:
+- Open **Settings** (Mac: Cmd + comma) and click **Configuration**.
+- Find **Local network access** (it says "Use default") and change it to allow / on.
 - Start a new chat in your project and paste the prompt again.
 
 That's it. It downloads everything, tells you what it is, and starts the interview. Answer one question at a time. Talking is faster than typing: a voice-to-text tool like [Wispr Flow](https://wisprflow.ai/r?HARSH1055) helps a lot. When it asks, drop your logo into `assets/brand/`, 2-3 photos of you into `assets/photos/`, and screenshots of your product into `assets/product/`.
