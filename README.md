@@ -46,10 +46,9 @@ This isn't a chatbot. It's a workspace your assistant lives inside, with your of
 ```
 Set up my AI assistant in this folder. Do every step yourself. Don't ask me to unzip or move anything.
 
-1. Get the workspace:
-   - First look for "moa-ai-assistant-main.zip" or a folder called "moa-ai-assistant-main" in this folder or my Downloads folder (pick the newest). If my computer asks for permission to access Downloads, tell me to click Allow.
-   - Not there? Try downloading it yourself: https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip
-   - If the download fails, reply with just this one line and wait for me to say "done": "Click this link to download your workspace, then type done: https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip"
+1. Download the workspace from https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip
+   - If you can't download it (no internet in this chat), reply with just this one line and wait: "Click this link to download your workspace, then type done: https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip"
+   - When I type done, find the newest "moa-ai-assistant-main.zip" (or an unzipped "moa-ai-assistant-main" folder) in my Downloads folder. If my computer asks for permission to access Downloads, tell me to click Allow.
 2. Copy everything from inside "moa-ai-assistant-main" into this folder, INCLUDING hidden folders like ".agents" (that's where the skills live). Mac: unzip / cp -R. Windows: tar -xf or Expand-Archive, then Copy-Item -Recurse -Force. If this folder already has files in it, don't overwrite anything, tell me first.
 3. Check it worked: AGENTS.md, README.md, context/, memory/, references/moa/ and .agents/skills/ with 5 skills (my-business, product-mockups, build-page, moa-emails, ad-images). Fix anything missing yourself.
 4. Read AGENTS.md and README.md, then give me a short summary in plain English, under 15 lines, no jargon:
