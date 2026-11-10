@@ -41,16 +41,15 @@ This isn't a chatbot. It's a workspace your assistant lives inside, with your of
 - Go to **Projects**, choose to open a local folder, and pick the folder you just made.
 - Start a **new chat** inside that project.
 
-**4. Click this link once:** https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip
-It downloads the workspace to your Downloads folder. Don't open or unzip it, your assistant does that.
-
-**5. Paste the setup prompt below** into the new chat and press Enter. If your computer asks to let ChatGPT access Downloads, click **Allow**.
+**4. Paste the setup prompt below** into the new chat and press Enter. If your app can't download files itself, it will give you a link to click: click it, then type **done**. If your computer asks to let ChatGPT access Downloads, click **Allow**.
 
 ```
 Set up my AI assistant in this folder. Do every step yourself. Don't ask me to unzip or move anything.
 
-1. Find the workspace I just downloaded. It is in my Downloads folder, either as "moa-ai-assistant-main.zip" or as an unzipped folder called "moa-ai-assistant-main" (pick the newest one). If my computer asks for permission to access Downloads, tell me to click Allow.
-   - If it isn't there, try downloading it yourself from https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip . If that fails too, tell me in one line to click that link, then wait for me to say "done".
+1. Get the workspace:
+   - First look for "moa-ai-assistant-main.zip" or a folder called "moa-ai-assistant-main" in this folder or my Downloads folder (pick the newest). If my computer asks for permission to access Downloads, tell me to click Allow.
+   - Not there? Try downloading it yourself: https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip
+   - If the download fails, reply with just this one line and wait for me to say "done": "Click this link to download your workspace, then type done: https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip"
 2. Copy everything from inside "moa-ai-assistant-main" into this folder, INCLUDING hidden folders like ".agents" (that's where the skills live). Mac: unzip / cp -R. Windows: tar -xf or Expand-Archive, then Copy-Item -Recurse -Force. If this folder already has files in it, don't overwrite anything, tell me first.
 3. Check it worked: AGENTS.md, README.md, context/, memory/, references/moa/ and .agents/skills/ with 5 skills (my-business, product-mockups, build-page, moa-emails, ad-images). Fix anything missing yourself.
 4. Read AGENTS.md and README.md, then give me a short summary in plain English, under 15 lines, no jargon:
