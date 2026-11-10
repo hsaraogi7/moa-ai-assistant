@@ -41,24 +41,26 @@ This isn't a chatbot. It's a workspace your assistant lives inside, with your of
 - Go to **Projects**, choose to open a local folder, and pick the folder you just made.
 - Start a **new chat** inside that project.
 
-**4. Paste the setup prompt below** and press Enter. If it asks permission to download or create files, approve it.
+**4. Paste the setup prompt below** and press Enter. When it asks to use the internet or create files, click **Approve**. You don't download anything yourself.
 
 ```
-Set up my AI assistant in this folder.
+Set up my AI assistant in this folder. Do every step yourself. Never ask me to download, unzip or move files by hand.
 
-1. Download this workspace into the current folder:
-   https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip
-   - Unzip it, then move everything from inside the "moa-ai-assistant-main" folder into this folder, INCLUDING hidden files and folders like ".agents" (that's where the skills live). Then remove the zip and the empty "moa-ai-assistant-main" folder.
-   - Use whatever works on my computer. Mac: curl + unzip. Windows: curl + tar -xf, or PowerShell Invoke-WebRequest + Expand-Archive.
+1. Bring the workspace into this folder.
+   - Source: https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip
+   - This needs internet. If your command is blocked or can't connect, run it again and request my approval to use the network (outside the sandbox). I will click Approve.
+   - Unzip it, then move everything from inside "moa-ai-assistant-main" into this folder, INCLUDING hidden folders like ".agents" (that's where the skills live). Then remove the zip and the empty "moa-ai-assistant-main" folder.
+   - Mac: curl + unzip. Windows: curl + tar -xf, or PowerShell Invoke-WebRequest + Expand-Archive.
    - If this folder already has files in it, don't overwrite anything. Tell me first.
-2. Check it worked: this folder should now have AGENTS.md, README.md, context/, memory/, references/moa/ and .agents/skills/ with 5 skills (my-business, product-mockups, build-page, moa-emails, ad-images). Tell me if anything is missing.
-3. Read AGENTS.md and README.md, then give me a short summary in plain English:
+2. Check it worked: AGENTS.md, README.md, context/, memory/, references/moa/ and .agents/skills/ with 5 skills (my-business, product-mockups, build-page, moa-emails, ad-images). Fix anything missing yourself.
+3. Read AGENTS.md and README.md, then give me a short summary in plain English, under 15 lines, no jargon:
    - What you are and what you can help me with
    - The 5 skills, one line each
    - What happens next
-   Keep it under 15 lines. No technical jargon.
 4. Then start my setup interview right away by following .agents/skills/my-business/SKILL.md exactly. One question at a time.
 ```
+
+**If it still says it can't connect:** click the permissions control under the chat box, switch to **Full access**, paste the prompt again, and switch back to **Ask for approval** once setup is done.
 
 That's it. It downloads everything, tells you what it is, and starts the interview. Answer one question at a time. Talking is faster than typing: a voice-to-text tool like [Wispr Flow](https://wisprflow.ai/r?HARSH1055) helps a lot. When it asks, drop your logo into `assets/brand/`, 2-3 photos of you into `assets/photos/`, and screenshots of your product into `assets/product/`.
 
