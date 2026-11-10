@@ -2,7 +2,9 @@
 
 **A 6FA x BM build** - Six Figure Accelerator x Bloody Marketers
 
-Your own AI assistant for the **Micro Offer Accelerator**. It learns your business once, then helps you build and sell your micro offer using Sahil's MOA method:
+Your own AI executive assistant for running a one-person business. It learns your business once, remembers it every session, and helps with any task you hand it: planning your week, thinking through a decision, drafting posts and messages, replying to customers, research.
+
+On top of that, it comes with 4 ready-made skills for your micro offer, built on Sahil's MOA method:
 
 - **Product mockups** - ebook and toolkit covers, 3D shots, device screens, bundle images
 - **Sales page** - written and designed for you, delivered as copy-ready HTML for GoHighLevel
@@ -11,12 +13,19 @@ Your own AI assistant for the **Micro Offer Accelerator**. It learns your busine
 
 This isn't a chatbot. It's a workspace your assistant lives inside, with your offer, your brand, your voice and the MOA playbook built in.
 
+**What's included and what isn't:** the 4 micro offer skills are the ready-made part. For everything else (planning, content, customer replies) just ask in plain English and it works from what it knows about you. It does not connect to your email inbox or calendar out of the box.
+
+**The names:** MOA = Micro Offer Accelerator, Sahil Sehgal's program. 6FA = Six Figure Accelerator, Sahil's company. BM = Bloody Marketers, the agency that built this workspace.
+
 ---
 
 ## What you need
 - A **ChatGPT Plus** plan or higher (image generation is not on the free plan)
 - The **ChatGPT desktop app** (Codex lives inside it), on Mac or Windows
 - 20 minutes for the setup interview
+- **No API key needed.** Images are made with ChatGPT's built-in image generation, included in your plan. Making images uses up your plan's Codex limit faster than text does, so pick your angles first, then generate.
+
+**About the backup image script (most people never need it):** `scripts/generate_image.py` is a spare way to make images, only for when built-in image generation isn't working for you. It talks to OpenAI directly using an OpenAI API key. An API key is a separate account at https://platform.openai.com with its own pay-per-image billing, not covered by ChatGPT Plus. Check current prices at https://openai.com/api/pricing before using it. If built-in images work, ignore this script.
 
 ## Setup (one time)
 
@@ -77,7 +86,7 @@ You can also just ask in plain English ("make my sales page") and the assistant 
 | `.agents/skills/` | The 5 skills |
 | `assets/` | Your logo, photos, product screenshots, reference ads |
 | `content/` | Everything your assistant makes |
-| `scripts/generate_image.py` | Backup image generator if built-in images ever don't work for you (needs an OpenAI API key) |
+| `scripts/generate_image.py` | Backup image generator, only if built-in images don't work for you (needs a paid OpenAI API key, see "What you need") |
 | `decisions/`, `archives/`, `temp/` | Decision log, old work, scratch files |
 
 ## Tips
