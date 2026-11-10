@@ -12,7 +12,7 @@ After this interview they should feel: "This isn't a chatbot. This is MY assista
 ## Before you start
 
 Greet them warmly. Set expectations in a few short lines:
-- This takes about 15-20 minutes.
+- There are 31 short questions in 9 sections. It takes about 25-30 minutes.
 - Talking is faster than typing. A voice-to-text tool like [Wispr Flow](https://wisprflow.ai/r?HARSH1055) makes this feel like a conversation, not a form.
 - You'll ask one question at a time.
 - At the end you'll write their personalized setup files.
@@ -113,25 +113,37 @@ type: user
 
 ## Show them what you did
 
-Show a short summary of what you captured: who they serve, their micro offer, their brand. Highlight 3 things you captured well. List any `OPEN:` items and any missing assets (logo, photos, product screenshots) in one short list.
+Start with: "Setup is done. Here's what I now know about you."
 
-Then tell them: "From now on I know who you are, what you sell and what matters this month, every session."
+Then a short summary:
+- **You:** name, what they do, who they serve
+- **Your micro offer:** name, price, what's inside, quick win
+- **Your brand:** colors, feel, which assets are in `assets/`
+- **Files I updated:** `AGENTS.md`, `context/me.md`, `context/business.md`, `context/goals.md`, `context/current-priorities.md`, `context/team.md`, `context/communication-style.md`, `memory/`
+- **Still open:** every `OPEN:` item and missing asset (logo, photos, product screenshots), in one short list. Skip this line if nothing is open.
 
-## The first win (do not skip)
+## What I can do now (do not skip)
 
-End with the next step in the MOA build order and one prompt to try right now:
-- No mockups yet: **"Make my product mockups"** (`product-mockups`).
-- Mockups exist, no page: **"Build my sales page"** (`build-page`).
-- Page exists: **"Write my confirmation and abandoned cart emails"** (`moa-emails`).
-- Ready for traffic: **"Make 3 ad images for my offer"** (`ad-images`).
+End every setup with this, in your own name:
 
-Tell them: "Try this. You'll feel the difference."
+"From now on I remember all of this, every session. I already have the skills to build your micro offer funnel:
+
+1. **Product mockups:** covers, 3D shots, device screens, bundle images
+2. **Sales page:** sales, thank-you and upsell pages, as copy-ready HTML for GoHighLevel
+3. **Emails:** your confirmation email and abandoned cart sequence
+4. **Ad images:** Meta ads from a reference image, with or without your copy
+
+I can also help with anything else in your business: planning your week, content ideas, customer replies, thinking through a decision.
+
+**What do you want me to do first?** If you're not sure, start with your product mockups, because the page, emails and ads all reuse them."
+
+Then wait for their answer.
 
 ## Hard rules
 - One question at a time.
 - Use the assistant's chosen name in every message after they pick it.
 - Don't write files mid-interview.
 - Never invent offer details, testimonials or results. Unknown = `OPEN:`.
-- The first-win prompt is mandatory.
+- The "What I can do now" ending is mandatory.
 - If they tap out or say "let's pause", save what you have, tell them they can resume by running `my-business` again, and stop.
 - Don't coach them on their offer during the interview. Absorb and document. Coaching happens in the other skills, grounded in the MOA material.
