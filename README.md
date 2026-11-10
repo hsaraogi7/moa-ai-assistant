@@ -32,6 +32,7 @@ This isn't a chatbot. It's a workspace your assistant lives inside, with your of
 **1. Install the ChatGPT desktop app**
 - **Mac:** download it from https://learn.chatgpt.com/docs/app and drag it into Applications.
 - **Windows:** install it from the Microsoft Store using this link: https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi . Don't search the Store for "Codex" by name, an unrelated app can come up.
+- **Windows only:** also install Git from https://git-scm.com/download/win (just click Next through the installer).
 
 **2. Make an empty folder** on your computer, for example `Documents/My AI Assistant`.
 
