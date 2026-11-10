@@ -41,31 +41,26 @@ This isn't a chatbot. It's a workspace your assistant lives inside, with your of
 - Go to **Projects**, choose to open a local folder, and pick the folder you just made.
 - Start a **new chat** inside that project.
 
-**4. Paste the setup prompt below** and press Enter. When it asks to use the internet or create files, click **Approve**. You don't download anything yourself.
+**4. Click this link once:** https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip
+It downloads the workspace to your Downloads folder. Don't open or unzip it, your assistant does that.
+
+**5. Paste the setup prompt below** into the new chat and press Enter. If your computer asks to let ChatGPT access Downloads, click **Allow**.
 
 ```
-Set up my AI assistant in this folder. Do every step yourself. Never ask me to download, unzip or move files by hand.
+Set up my AI assistant in this folder. Do every step yourself. Don't ask me to unzip or move anything.
 
-1. Bring the workspace into this folder.
-   - Source: https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip
-   - This needs internet. If your command is blocked or can't connect, run it again and request my approval to use the network (outside the sandbox). I will click Approve.
-   - Unzip it, then move everything from inside "moa-ai-assistant-main" into this folder, INCLUDING hidden folders like ".agents" (that's where the skills live). Then remove the zip and the empty "moa-ai-assistant-main" folder.
-   - Mac: curl + unzip. Windows: curl + tar -xf, or PowerShell Invoke-WebRequest + Expand-Archive.
-   - If this folder already has files in it, don't overwrite anything. Tell me first.
-2. Check it worked: AGENTS.md, README.md, context/, memory/, references/moa/ and .agents/skills/ with 5 skills (my-business, product-mockups, build-page, moa-emails, ad-images). Fix anything missing yourself.
-3. Read AGENTS.md and README.md, then give me a short summary in plain English, under 15 lines, no jargon:
+1. Find the workspace I just downloaded. It is in my Downloads folder, either as "moa-ai-assistant-main.zip" or as an unzipped folder called "moa-ai-assistant-main" (pick the newest one). If my computer asks for permission to access Downloads, tell me to click Allow.
+   - If it isn't there, try downloading it yourself from https://github.com/hsaraogi7/moa-ai-assistant/archive/refs/heads/main.zip . If that fails too, tell me in one line to click that link, then wait for me to say "done".
+2. Copy everything from inside "moa-ai-assistant-main" into this folder, INCLUDING hidden folders like ".agents" (that's where the skills live). Mac: unzip / cp -R. Windows: tar -xf or Expand-Archive, then Copy-Item -Recurse -Force. If this folder already has files in it, don't overwrite anything, tell me first.
+3. Check it worked: AGENTS.md, README.md, context/, memory/, references/moa/ and .agents/skills/ with 5 skills (my-business, product-mockups, build-page, moa-emails, ad-images). Fix anything missing yourself.
+4. Read AGENTS.md and README.md, then give me a short summary in plain English, under 15 lines, no jargon:
    - What you are and what you can help me with
    - The 5 skills, one line each
    - What happens next
-4. Then start my setup interview right away by following .agents/skills/my-business/SKILL.md exactly. One question at a time.
+5. Then start my setup interview right away by following .agents/skills/my-business/SKILL.md exactly. One question at a time.
 ```
 
-**If it says it can't connect to GitHub:** the app is blocking internet for the assistant. Fix it once:
-- Open **Settings** (Mac: Cmd + comma) and click **Configuration**.
-- Find **Local network access** (it says "Use default") and change it to allow / on.
-- Start a new chat in your project and paste the prompt again.
-
-That's it. It downloads everything, tells you what it is, and starts the interview. Answer one question at a time. Talking is faster than typing: a voice-to-text tool like [Wispr Flow](https://wisprflow.ai/r?HARSH1055) helps a lot. When it asks, drop your logo into `assets/brand/`, 2-3 photos of you into `assets/photos/`, and screenshots of your product into `assets/product/`.
+That's it. It copies everything in, tells you what it is, and starts the interview. Answer one question at a time. Talking is faster than typing: a voice-to-text tool like [Wispr Flow](https://wisprflow.ai/r?HARSH1055) helps a lot. When it asks, drop your logo into `assets/brand/`, 2-3 photos of you into `assets/photos/`, and screenshots of your product into `assets/product/`.
 
 When the interview is done, your assistant updates all its files, shows you what it learned, lists what it can do, and asks what you want to do first.
 
